@@ -1,0 +1,183 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.your-element {
+  border: 50px solid pink;
+}
+
+.bytn {
+  border-radius: 10%;
+  border: none;
+}
+
+.bytn:hover {
+  background-color: darkorange;
+}
+
+.fa-play {
+  margin-left: 25px;
+  color: #ff6500;
+}
+
+.myimg {
+  height: 23rem;
+  /* width: 20rem; */
+  margin-left: 55%;
+  position: absolute;
+  border-top-right-radius: 80%;
+  border-top-left-radius: 80%;
+  z-index: -1;
+
+}
+
+.work-button {
+  color: orangered;
+  border: none;
+  border-radius: 20px;
+}
+
+.work-button:hover {
+  background-color: pink;
+}
+
+#upper-part {
+  
+  margin-top: 2%;
+  font-family: "Mukta", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+#middle-part {
+  
+  margin-top: 5%;
+  margin-left: 10%;
+  font-family: "Mukta", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  
+}
+
+.dotted-curve {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  border-top: 3px dotted #ff6500; /* Dotted border */
+  border-radius: 400px 400px 0 0; /* Makes the top half a curve */
+  padding: 0;
+
+}
+
+.cards-java {
+  position: relative;
+  margin-left: 85%;            
+  display: flex;             
+  justify-content: center;   
+  align-items: center;      
+  text-align: center; 
+}
+
+.cards-dsa {
+  position: relative;
+  margin-left: 58%;
+  z-index: 2;
+  justify-content: center;   /* Center content horizontally */
+  align-items: center;       
+  text-align: center; 
+}
+
+.cards-front {
+top:20px;
+  margin-left: 58%;
+position: relative;
+  z-index: 2; 
+  justify-content: center; 
+  align-items: center; 
+  border-radius: 10px; 
+}
+
+.paragraph {
+  font-size: 20px;
+}
+
+.cir {
+  top: 200px;
+  left: 22%;
+  width: 160px;
+  height: 160px;
+  background: radial-gradient(circle at top, #ff6500, #ffa500); /* Gradient from top to lighter bottom */
+  border-radius: 50%;
+  z-index: -1;
+  position: absolute;
+
+}
+
+.quart-cir {
+  position: absolute;
+  top: 25%;
+  width: 120px;
+  height: 120px;
+  background-color: #ff6500;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 100px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  margin-left: 67%;
+}
+
+.quart-circl {
+  position: absolute;
+  top: 75%;
+  width: 120px;
+  height: 120px;
+  background-color: #ff6500;
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 0;
+  margin-left: 50%;
+  
+}
+
+#lower-part {
+  position: relative;
+  margin-bottom: 5%;
+  margin-left: 10%;
+
+}
+
+.icns {
+  color: orangered;
+  font-size: 25px;
+  margin-right: 17px;
+}
+
+.arrows {
+  border-radius: 10%;
+  margin-top: 2%;
+border: none;
+}
+
+#sliding {
+  border: 50px solid pink;
+  position: fixed;      /* Fixed position to overlay the page */
+  bottom: -100%;       /* Start hidden below the viewport */
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white; /* Background color */
+  color: #FF6500;          /* Text color */
+  display: flex;        /* Flexbox to center content */
+  flex-direction: column; /* Column layout */
+  justify-content: center; /* Center vertically */
+  align-items: center;   /* Center horizontally */
+  transition: bottom 1s ease-in-out; /* Smooth transition for sliding */
+  z-index: 2;
+}
+
+#sliding.show {
+  bottom: 0;
+}
+
+
