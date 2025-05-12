@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .contact-heading {
   font-family: "Montserrat", sans-serif;
 }
@@ -17,3 +18,106 @@
   height: 500px;
   width: 300px;
 }
+=======
+body {
+    background: linear-gradient(to right, #FFB0B0, red);
+}
+
+.your-element {
+    border-top: 50px solid pink;
+   
+
+    margin: 0;
+    padding: 0;
+
+    font-family: "Dosis", sans-serif;
+    font-optical-sizing: auto;
+    
+    font-style:normal;
+
+}
+
+/* .back-img {
+    z-index: -1;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+} */
+
+.contact-img {
+    height: 39rem;
+    margin-left: 65%;
+  position: absolute;
+  border: none;
+  top: 10%;
+}
+
+h1 {
+     font-weight: bolder;
+     font-size: 4rem;
+    text-align: left;
+    color: orangered;
+    margin-left: 10%;
+    padding-bottom: 2px;
+}
+
+.txt-section {
+    margin-top: 5%;
+    margin-left: 10%;
+}
+
+input {
+    background-color: pink;
+    width: 30%;
+    height: 2rem;
+    max-width: 400px;
+    padding: 1rem;
+    margin: 10px auto;
+    border: none;
+    font-size: 3rem;
+    /* border-radius: 30px; */
+    font-size: 1.5rem;
+    font-family: "Inter", sans-serif;
+    background-position: 10px center;
+    background-repeat: no-repeat;
+    padding-left: 40px;
+
+    border-radius: 20px;
+  
+    
+}
+
+input::placeholder {
+    color:#D1E9F6;
+    font-style: italic;
+    font-family: "Font Awesome 5 Free", sans-serif;
+    font-weight: 900;
+
+
+}
+
+input[type="submit"] {
+    background-color: orangered;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    height: 3rem;
+    font-size: 1.5rem;
+ margin-left: 25px;
+    text-align: center;
+    
+
+}
+
+input[type="submit"]:hover {
+    background-color: darkred;
+    transition: background-color 0.3s ease-in-out;
+}
+
+
+.email.txt {
+
+}
+>>>>>>> 0ed6ac9f3bc49a39f9dd1314e0eec1bc8589372c
