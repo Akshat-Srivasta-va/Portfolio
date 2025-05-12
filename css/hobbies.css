@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #complete {
     position:relative;
     border: 50px solid pink;
@@ -32,38 +31,3 @@
 background-color: white;
 } 
 
-=======
-#complete {
-    position:relative;
-    border: 50px solid pink;
-    padding-bottom: 70px;
-}
-
-.heading {
-    position: relative;
-    text-align: center;
-    margin-top: 1%;
-    margin-bottom: 2%;
-    color: orangered;
-   
-}
-
-.imgchess {
-    height: 48%;
-}
-
-#back-button {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    border: none;
-    border-radius: 10%;
-    margin-top: 20%;
-    background-color: orangered;
-}
-
-#back-button:hover {
-background-color: white;
-} 
-
->>>>>>> 0ed6ac9f3bc49a39f9dd1314e0eec1bc8589372c
