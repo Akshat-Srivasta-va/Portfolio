@@ -1,18 +1,54 @@
+/* Base styles */
 html {
   scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Mukta", sans-serif;
 }
 
 .your-element {
-  border: 50px solid pink;
+  min-height: 10vh;
+  border: 30px solid pink; /* Adjust border size */
+  margin: 0; /* Remove margin to fit the screen */
+  padding: 10px; /* Add padding for spacing */
+  width: 100vw;
+  min-height: 100vh
+}
+
+
+.container {
+  padding: 16px;
+  text-align: center;
 }
 
 .bytn {
   border-radius: 10%;
   border: none;
+  background-color: #f8f8f8;
+  padding: 10px 20px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  color: black;
 }
+
+.menu-toggle {
+    display: block; /* Ensure it is displayed on small screens */
+  }  
 
 .bytn:hover {
   background-color: darkorange;
+  color: white;
 }
 
 .fa-play {
@@ -20,164 +56,328 @@ html {
   color: #ff6500;
 }
 
+/* Image container and quarter circles */
+.image-container {
+  position: relative;
+  width: 90%;
+  max-width: 300px;
+  margin: auto;
+  padding: 0 20px;
+  margin-left: 5%; /* Move the image slightly to the left */
+}
+
 .myimg {
-  height: 23rem;
-  /* width: 20rem; */
-  margin-left: 55%;
-  position: absolute;
+  width: 100%;
+  height: auto;
+  display: block;
   border-top-right-radius: 80%;
   border-top-left-radius: 80%;
-  z-index: -1;
-
+  z-index: 1; /* Ensure the image is above the quarter circles */
 }
 
-.work-button {
-  color: orangered;
-  border: none;
-  border-radius: 20px;
+.quart-cir {
+  position: absolute;
+  top: -20px; /* Adjusted position */
+  right: -20px; /* Adjusted position */
+  width: 100px; /* Larger size */                        
+  height: 100px; /* Larger size */
+  background-color: #ff6500;
+  border-top-right-radius: 100px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  z-index: 0; 
 }
 
-.work-button:hover {
-  background-color: pink;
+.quart-circl {
+  position: absolute;
+  bottom: -20px; 
+  left: -20px;
+  width: 100px;
+  height: 100px;
+  background-color: #ff6500;
+  border-bottom-left-radius: 100px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  z-index: 0;/
+}
+
+/* Navigation styles */
+nav {
+  width: 100%;
+  padding: 15px 0;
 }
 
 #upper-part {
-  
   margin-top: 2%;
   font-family: "Mukta", sans-serif;
   font-weight: 700;
-  font-style: normal;
+  width: 100%;
 }
 
+.nav-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #ff6500;
+  cursor: pointer;
+  position: absolute;
+  left: 15px;
+  top: 15px;
+}
+
+.nav-menu {
+  width: 100%;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: space-around;
+}
+
+.nav-menu li {
+  margin: 0 25px;
+}
+
+/* Middle section styles */
 #middle-part {
-  
   margin-top: 5%;
   margin-left: 10%;
   font-family: "Mukta", sans-serif;
   font-weight: 700;
   font-style: normal;
-  
-}
-
-.dotted-curve {
-  position: absolute;
-  width: 500px;
-  height: 500px;
-  border-top: 3px dotted #ff6500; /* Dotted border */
-  border-radius: 400px 400px 0 0; /* Makes the top half a curve */
-  padding: 0;
-
-}
-
-.cards-java {
   position: relative;
-  margin-left: 85%;            
-  display: flex;             
-  justify-content: center;   
-  align-items: center;      
-  text-align: center; 
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.cards-dsa {
+.left-section {
+  flex: 1;
+  min-width: 200px;
   position: relative;
-  margin-left: 58%;
-  z-index: 2;
-  justify-content: center;   /* Center content horizontally */
-  align-items: center;       
-  text-align: center; 
+  z-index: 1;
 }
 
-.cards-front {
-top:20px;
-  margin-left: 58%;
-position: relative;
-  z-index: 2; 
-  justify-content: center; 
-  align-items: center; 
-  border-radius: 10px; 
+.right-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 200px;
+  position: relative;
 }
 
 .paragraph {
   font-size: 20px;
 }
 
-.cir {
-  top: 200px;
-  left: 22%;
-  width: 160px;
-  height: 160px;
-  background: radial-gradient(circle at top, #ff6500, #ffa500); /* Gradient from top to lighter bottom */
-  border-radius: 50%;
-  z-index: -1;
-  position: absolute;
+/* Skills section styles */
 
+.skills-heading {
+  text-align: center;
+  margin-top: 5%;
 }
 
-.quart-cir {
-  position: absolute;
-  top: 25%;
-  width: 120px;
-  height: 120px;
-  background-color: #ff6500;
-  border-top-left-radius: 0px;
-  border-top-right-radius: 100px;
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
-  margin-left: 67%;
+.card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px; /* spacing between cards */
+  padding: 30px;
 }
 
-.quart-circl {
-  position: absolute;
-  top: 75%;
-  width: 120px;
-  height: 120px;
-  background-color: #ff6500;
-  border-top-right-radius: 0px;
-  border-top-left-radius: 0px;
-  border-bottom-left-radius: 100px;
-  border-bottom-right-radius: 0;
-  margin-left: 50%;
-  
+.card {
+  width: 400px;
+  border: 5px solid #ff6500;
+  border-radius: 50px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(200, 87, 0, 0.1);
+  transition: transform 0.3s ease;
 }
 
+.card:hover {
+  transform: scale(1.03);
+  cursor: pointer;
+}
+
+.card-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.card-container {
+    text-align: center;
+    padding: 16px;
+}
+
+
+/* Lower section styles */
 #lower-part {
   position: relative;
   margin-bottom: 5%;
   margin-left: 10%;
+}
 
+.links {
+  position: relative;
+  z-index: 1;
 }
 
 .icns {
   color: orangered;
-  font-size: 25px;
+  font-size: 30px;
   margin-right: 17px;
+  pointer-events: auto;
 }
+
+.download-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color:  #f8f8f8;
+  color: black;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.download-btn:hover {
+  background-color: darkorange;
+    color: white;
+}
+
 
 .arrows {
   border-radius: 10%;
   margin-top: 2%;
-border: none;
+  border: none;
+  background: none;
+  position: relative;
+  z-index: 1;
 }
 
 #sliding {
   border: 50px solid pink;
-  position: fixed;      /* Fixed position to overlay the page */
-  bottom: -100%;       /* Start hidden below the viewport */
+  position: fixed;
+  bottom: -100%;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: white; /* Background color */
-  color: #FF6500;          /* Text color */
-  display: flex;        /* Flexbox to center content */
-  flex-direction: column; /* Column layout */
-  justify-content: center; /* Center vertically */
-  align-items: center;   /* Center horizontally */
-  transition: bottom 1s ease-in-out; /* Smooth transition for sliding */
-  z-index: 2;
+  background-color: white;
+  color: #ff6500;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: bottom 1s ease-in-out;
+  z-index: 10;
 }
 
 #sliding.show {
   bottom: 0;
 }
 
+@media (max-width: 768px) {
 
+    .image-container {
+    max-width: 200px;
+    margin-left: 5%;
+  }
+
+  .menu-toggle {
+    display: block; 
+  }
+
+  .quart-cir,
+  .quart-circl {
+    width: 100px; 
+    height: 100px; 
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    display: flex; 
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .nav-menu li {
+    margin: 10px 0;
+  }
+
+  #middle-part {
+    flex-direction: column;
+    display: flex;
+    align-items: center; 
+  }
+
+  .myimg {
+    height: 18rem;
+    margin: 30px auto;
+  }
+
+  .right-section {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .your-element {
+      border-width: 20px;
+    padding: 10px; 
+    /* width: calc(100% - 20px);  */
+    width: 100vw;
+    min-height: 100vh;
+  }
+  
+
+  #sliding {
+    border-width: 20px;
+  }
+
+  .myimg {
+    height: 15rem;
+  }
+
+  .quart-cir,
+  .quart-circl {
+    width: 75px;
+    height: 75px; 
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .paragraph {
+    font-size: 16px;
+  }
+
+  #lower-part {
+    margin-left: 5%;
+    text-align: center;
+  }
+
+  .icns {
+    font-size: 20px;
+    margin-right: 12px;
+  }
+}
+
+#social-links a {
+  color: white !important;
+}
