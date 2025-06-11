@@ -12,30 +12,30 @@
         href="https://fonts.googleapis.com/css2?family=McLaren&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 
+    <script src="https://kit.fontawesome.com/97ad2d7bc0.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <div>
-        <h1 class="contact-heading">Contact Me</h1>
-    </div>
-    <div class="container">
-        <div class="left-section">
 
-            <div class="txt-section">
-                <form action="mailto:@srivastavaakshat52@gmail.com" method="post" enctype="text/plain"></form>
-                <input class="name-txt" type="text" placeholder="Name">
-                <br>
-                <input class="email-txt" type="text" placeholder="Email">
-                <br>
-                <input type="text" placeholder="Message">
-                <br>
-
-                <input class="message-section" type="submit" value="Send Message">
+    <div class="contact-container">
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+            <div class="contact-left-title">
+                <h2>Contact me</h2>
+                <hr>
             </div>
-        </div>
+            <input type="hidden" name="access_key" value="b9a548f5-760a-4e27-88f0-7cd0f21a6ed0">
+            <input type="text" name="name" placeholder="Your Name" class="contact-input" required>
+            <input type="email" name="email" placeholder="Your Email" class="contact-input" required  pattern="^[a-zA-Z0-9._%+-]+@gmail\.com$">
+            <textarea name="message" placeholder="Your Message" class="contact-input"></textarea>
 
-        <div class="right-section">
-            <div><img class="contact-img" src="images/contact-img.png" alt=""></div>
+            <button type="submit">
+                Submit &nbsp; <i class="fa-solid fa-arrow-right"></i>
+            </button>
+        </form>
+
+
+        <div class="contact-right">
+            <img class="" src="images/contact-img.png" alt="">
         </div>
 
     </div>
